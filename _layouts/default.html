@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/unslider.css">
+</head>
+<body>
+  {% include header.html %}
+
+  <main>
+    <div class="container clearfix">
+      {% include nav.html %}
+      {{ content }}
+    </div>
+  </main>
+  
+  {% include footer.html %}
+  
+
+  <script src="{{ "/js/jquery.min.js" | relative_url }}"></script>
+  <script src="{{ "/js/unslider.min.js" | relative_url }}"></script>
+  <script src="{{ "/js/bux.js" | relative_url }}"></script>
+
+</body>
+</html>

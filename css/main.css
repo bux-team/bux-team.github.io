@@ -1,0 +1,311 @@
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #353535;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 48px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h2 + .separator, h1 + .separator {
+  margin: 6px 0 32px 0;
+}
+
+.container {
+  width: 984px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin-left: 24px;
+  margin-top: 48px;
+}
+
+.content {
+  margin-left: 16px;
+  float: left;
+  width: 784px;
+  letter-spacing: 1px;
+}
+
+.content a {
+  color: #353535;
+  text-decoration: none;
+}
+
+.content h1 {
+  margin-bottom: 40px;
+}
+
+main {
+  margin-top: 32px;
+}
+
+nav {
+  width: 184px;
+  float: left;
+  font-size: 12px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 0 64px 24px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #959595;
+  text-decoration: none;
+  display: block;
+  line-height: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover, .nav-active a {
+  padding-left: 16px;
+  color: #333;
+}
+
+.nav-active a {
+  padding-left: 48px;
+}
+
+.nav-active a:hover {
+  padding-left: 48px;
+}
+
+.slider {
+  width: 784px;
+  height: 350px;
+}
+.unslider-nav {
+  margin-left: 320px;
+}
+
+.unslider .unslider-nav li {
+  width: 40px;
+  height: 4px;
+  background-color: #f1f1f1;
+  text-indent: -999em;
+  float: left;
+  margin-right: 12px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.unslider .unslider-nav li.unslider-active {
+  background-color: #353535;
+}
+
+.videos > div {
+  float: left;
+  width: 376px;
+  margin-bottom: 32px;
+}
+
+.videos > div:nth-of-type(2n) {
+  margin-left: 32px;
+}
+
+.videos > div .title {
+  margin-top: 16px;
+}
+
+.videos > div > a {
+  position: relative;
+  display: block;
+  width: 376px;
+  height: 212px;
+}
+
+.videos > div > a:hover .mask {
+  background-color: white;
+}
+
+.videoplay {
+  position: absolute;
+  top: 86px;
+  left: 168px;
+  z-index: 2;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.date {
+  color: #959595;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.date span {
+  color: #353535;
+  margin-right: 8px;
+}
+
+.articles > div {
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.articles img {
+  float: left;
+  margin-right: 32px;
+}
+
+.articles .title {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.articles .summary {
+  line-height: 2;
+}
+
+.separator {
+  width: 24px;
+  height: 0;
+  border-bottom: 2px solid #353535;
+  margin: 24px 0;
+}
+
+.articles .separator {
+  margin-left: 408px;
+}
+
+.read-more {
+  font-size: 12px;
+  display: inline-block;
+  border: 1px solid #979797;
+  padding: 7px 30px 7px 15px;
+  margin-top: 24px;
+  color: #353535;
+  text-decoration: none;
+  background: url(http://oc34x4gmv.bkt.clouddn.com/bux-arrow.png) 94px center no-repeat;
+}
+
+.read-more:hover {
+  background-color: rgba(53,53,53,0.8);
+  color: white;
+  border-color: white;
+  background-image: url(http://oc34x4gmv.bkt.clouddn.com/bux-arrow-white.png);
+}
+
+.articles a img:hover {
+  opacity: 0.4;
+}
+
+footer {
+  color: #656565;
+  text-align: right;
+  margin: 64px 0;
+}
+
+footer .separator {
+  float: right;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+footer p {
+  clear: both;
+  margin: 0;
+}
+
+.article-body {
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 40px;
+}
+
+/*.article-body h2 {
+  margin-top: 1.6em;
+}*/
+
+.article-body h3 {
+  margin-top: 1.6em;
+}
+
+.article-body img {
+  max-width: 100%;
+}
+
+.article-body a {
+  text-decoration: underline;
+}
+
+.designers a {
+  float: left;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.designers a:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+figcaption {
+  text-align: center;
+  color: #999;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  margin: 40px 300px;
+  border: none;
+  border-bottom: 1px dashed #ccc;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: red;
+  }
+}

@@ -1,0 +1,95 @@
+---
+layout: default
+title: "五阿哥BUX团队官方网站"
+---
+
+<div class="content">
+  <div class="slider">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="http://placehold.it/784x350/8B572A/ffffff" width="784" height="350">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="http://placehold.it/784x350/F6A623/ffffff" width="784" height="350">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="http://placehold.it/784x350/417505/ffffff" width="784" height="350">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+
+    <h2>Latest Videos</h2>
+    <div class="separator"></div>
+    <div class="videos clearfix">
+      <div>
+        <a href="#">
+          <img class="videoplay" src="http://oc34x4gmv.bkt.clouddn.com/bux-videoplay.png" width="40" height="40">
+          <div class="mask"></div>
+          <img src="http://oc34x4gmv.bkt.clouddn.com/a3.png?imageView2/1/w/376/h/212" width="376" height="212">
+        </a>
+        
+        <div class="title"><a href="#">Facebook Reaction Design</a></div>
+        <div class="date">April 17,2017</div>
+      </div>
+      <div>
+        <a href="#">
+          <img class="videoplay" src="http://oc34x4gmv.bkt.clouddn.com/bux-videoplay.png" width="40" height="40">
+          <div class="mask"></div>
+          <img src="http://oc34x4gmv.bkt.clouddn.com/a4.png?imageView2/1/w/376/h/212" width="376" height="212">
+        </a>
+        
+        <div class="title"><a href="#">Facebook Reaction Design</a></div>
+        <div class="date">April 17,2017</div>
+      </div>
+      <div>
+        <a href="#">
+          <img class="videoplay" src="http://oc34x4gmv.bkt.clouddn.com/bux-videoplay.png" width="40" height="40">
+          <div class="mask"></div>
+          <img src="http://oc34x4gmv.bkt.clouddn.com/a5.png?imageView2/1/w/376/h/212" width="376" height="212">
+        </a>
+        
+        <div class="title"><a href="#">Facebook Reaction Design</a></div>
+        <div class="date">April 17,2017</div>
+      </div>
+      <div>
+        <a href="#">
+          <img class="videoplay" src="http://oc34x4gmv.bkt.clouddn.com/bux-videoplay.png" width="40" height="40">
+          <div class="mask"></div>
+          <img src="http://oc34x4gmv.bkt.clouddn.com/a6.png?imageView2/1/w/376/h/212" width="376" height="212">
+        </a>
+        
+        <div class="title"><a href="#">Facebook Reaction Design</a></div>
+        <div class="date">April 17,2017</div>
+      </div>
+    </div>
+
+    <h2>Latest Release</h2>
+    <div class="separator"></div>
+    <div class="articles clearfix">
+      {% for post in site.posts %}
+        <div>
+          <a href="{{ post.url }}"><img src="http://placehold.it/376x376/8B572A/ffffff" width="376" height="376"></a>
+          <div class="meta">
+            <div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+            <div class="date">Date: <span>{{ post.date | date_to_string }}</span></div>
+            <div class="date">Author: <span>{{ post.author }}</span></div>
+            <div class="date">Label: <span>{{ post.categories }}</span></div>
+          </div>
+          <div class="separator"></div>
+          <div class="summary">{{ post.excerpt }}</div>
+          <a href="{{ post.url }}" class="read-more">Read more</a>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
