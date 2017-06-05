@@ -241,9 +241,9 @@ footer p {
   margin-top: 40px;
 }
 
-/*.article-body h2 {
-  margin-top: 1.6em;
-}*/
+.article-body h2 {
+  font-size: 20px;
+}
 
 .article-body h3 {
   margin-top: 1.6em;
